@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="0sp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="500sp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cat_face" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:textColor="#d15d32"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:text="@string/cat_hotel" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/information" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:onClick="startReservation"
+            android:text="Online reservation" />
+
+        <LinearLayout style="@style/InformationLayoutStyle">
+
+            <ImageView
+                style="@style/InformationStyle"
+                android:src="@drawable/web" />
+
+            <TextView
+                style="@style/ContactStyle"
+                android:text="@string/web" />
+
+        </LinearLayout>
+        <LinearLayout style="@style/InformationLayoutStyle">
+
+            <ImageView
+                style="@style/InformationStyle"
+                android:src="@drawable/mail" />
+
+            <TextView
+                style="@style/ContactStyle"
+                android:text="@string/mail" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/InformationLayoutStyle">
+
+            <ImageView
+                style="@style/InformationStyle"
+                android:src="@drawable/phone" />
+
+            <TextView
+                style="@style/ContactStyle"
+                android:text="@string/phone" />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/InformationLayoutStyle">
+
+            <ImageView
+                style="@style/InformationStyle"
+                android:src="@drawable/open" />
+
+            <TextView
+                style="@style/ContactStyle"
+                android:text="@string/guarantee" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
